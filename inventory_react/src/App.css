@@ -77,8 +77,8 @@ position: relative;
 /*Header styling start*/
 .leftheader{
 display: inline-block;
-width:65vw;
-margin-right: 12vw;
+width:55vw;
+margin-right: 22vw;
 }
 .logo{
 display: inline;
@@ -100,9 +100,9 @@ margin-bottom: 10px !important;
  display: inline;
  align-self: right;
  height: 80%;
- width:40vw;
+ width:30vw;
  margin-left:auto;
- margin-right:0px;
+ margin-right:0vw;
  float:inline-end;
 }
 .ulhorizontal{
