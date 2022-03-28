@@ -79,7 +79,6 @@ function App() {
     getAPIData().then((data) => {
       if (mounted) {
         setItems(data);
-        console.log(data);
       }
     });
     return () => (mounted = false);
