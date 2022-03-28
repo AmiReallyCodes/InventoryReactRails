@@ -4,7 +4,6 @@ import classes from "./Items.module.css";
 import ItemStructure from "./ItemStructure";
 
 function Items(props) {
-  console.log(props);
   const inputTextref = useRef("");
 
   const getSearchText = () => {
