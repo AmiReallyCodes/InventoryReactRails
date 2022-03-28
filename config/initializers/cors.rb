@@ -7,7 +7,7 @@
 
  Rails.application.config.middleware.insert_before 0, Rack::Cors do
    allow do
-     origins "http://localhost:3001/"
+     origins "http://localhost:3001"
 # origins give permission to specified one to get access to rails API. 
 #Here frontend React will be on localhost 30001
      resource "*",

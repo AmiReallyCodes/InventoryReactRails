@@ -1,38 +1,138 @@
-.App {
-  text-align: center;
+.font-link {
+  font-family: 'Hanalei Fill', cursive;
+  font-weight: bold;
 }
+/*Grid styling start*/
+.body1 { 
+  display: grid;
+  grid-template-columns: [first] 15vw [line2] 1fr [line3] 10vw [col4-start] ;
+grid-template-rows: [row1-start] 12vh [row1-end] 79vh [third-line] 7vh [last-line];
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  background: url('../src/component/Images/AddInventoryItem_BG_Image.png');
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  }  
+.header{ 
+  grid-area: header;
+  padding: 1.2em;
+  grid-column-start: first;
+grid-column-end:  col4-start;
+grid-row-start: row1-start;
+grid-row-end: row1-end; 
+background-color: #0072a0; 
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .footer{
+    padding: 1.2em;
+  grid-column-start: line2;
+grid-column-end:  col4-start;
+grid-row-start: third-line;
+grid-row-end: last-line; 
   }
-  to {
-    transform: rotate(360deg);
-  }
+  .article{
+    padding: 1.2em;
+  grid-column-start: line2;
+grid-column-end:  line3;
+grid-row-start: row1-end;
+grid-row-end: third-line; 
+display: flex;
 }
+  .nav{
+    padding: 1.2em;
+  grid-column-start: first;
+grid-column-end:  line2;
+grid-row-start: row1-end;
+grid-row-end: last-line;  
+}
+  .ads{
+    padding: 1.2em;
+  grid-column-start: line3;
+grid-column-end:  col4-start;
+grid-row-start: row1-end;
+grid-row-end: third-line;  
+position: relative;
+}
+  .div{
+    padding: 1.2em;
+  }
+
+  
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 575px) {
+  body { 
+    grid-template-areas: 
+      "header"
+      "article"
+      "ads"
+      "nav"
+      "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;  
+    grid-template-columns: 1fr;
+ }
+}
+/*Grid styling end*/
+
+/*Header styling start*/
+.leftheader{
+display: inline-block;
+width:65vw;
+margin-right: 12vw;
+}
+.logo{
+display: inline;
+width: 80%;
+height: 80%;
+}
+
+.icon, .text {
+display:inline;
+}
+
+.text{
+margin-left:10px;
+height: 100%;
+font-style: italic;
+margin-bottom: 10px !important;
+}
+.navMenuHorizontal{
+ display: inline;
+ align-self: right;
+ height: 80%;
+ width:40vw;
+ margin-left:auto;
+ margin-right:0px;
+ float:inline-end;
+}
+.ulhorizontal{
+display: inline;
+align-items: right;
+}
+
+.lihorizontal
+{
+display: inline;
+list-style-type: none;
+padding-right: 35px;
+font-size: 23px;
+color: white;
+font-weight: lighter;
+}
+/*Header styling end*/
+
+/*nav styling start*/
+.navMenu{
+font-size: 22px;
+}
+ul{
+  list-style-type: none !important;
+}
+/*nav styling end*/
+/*article styling start*/
+
+
+/*article styling end*/
+
+
+

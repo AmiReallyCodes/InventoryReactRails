@@ -1,0 +1,104 @@
+.background {
+    width: 100%;
+    height: 100%;
+   }
+
+  .formAddNewItem {
+    height: 60vh;
+    width: 55vw;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+    color: #ffffff;
+  }
+
+  form * {
+    font-family: 'Hanalei Fill';
+    font-size:20px;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+    padding-left: 15px;
+  }
+
+  form h3 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  label {
+    float: left;
+    width:40%;
+    height: 90%;
+    margin-top: 20px !important;
+    font-style: oblique;
+    font-size: 22px !important ;
+}
+  
+span {
+    display: block;
+    overflow: hidden;
+    padding: 0px;
+    width:60%;
+}
+  
+input {
+    width: 85%;
+    color: #ffffff;
+    }
+select {
+  display: block;
+  height: 50px;
+  width: 51%;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  color: #ffffff;
+  }
+  input:disabled{
+  background-color: #080710;
+}
+
+  ::placeholder {
+    color: #e5e5e5;
+  }
+
+
+  .buttonAdd {
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 5%;
+    width: 25%;
+    background-color: #fb4570;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .buttonCancel {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 15%;
+    width:  25%;
+    background-color: transparent;
+    color: #fb4570;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 5px;
+    border-width: 3px;
+    cursor: pointer;
+  }
+
+
+  
