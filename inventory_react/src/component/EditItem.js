@@ -12,7 +12,6 @@ const EditItem = (props) => {
   const [unitofmeasurement, setUnitofmeasure] = useState("");
   const [quantity, setQuantity] = useState("");
 
-  console.log(location.state.item);
   useEffect(() => {
     setId(location.state.item.id);
     setName(location.state.item.name);
@@ -23,7 +22,6 @@ const EditItem = (props) => {
 
 
   const onSubmit = () => {
-    console.log("Hello from onSubmit");
     if (name === "" || quantity === "") {
       alert("All the fields are mandatory!");
       return;
