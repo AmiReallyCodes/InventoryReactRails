@@ -98,7 +98,7 @@ class AddNewItem extends React.Component {
             </span>
             <label/>
               <span>
-              <text style={{color:"red", size:"10px", fontWeight:"light"}}>*Only numeric value</text>
+              <text style={{color:"red", size:"10px", fontWeight:"lighter", fontStyle:"italic"}}>*Only numeric value</text>
               </span>
           </div>
           <button className={classes.buttonAdd}>Add</button>
